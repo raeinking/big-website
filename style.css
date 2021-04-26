@@ -1,0 +1,135 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-image: url(./image/pexels-caeli-team-3714960.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    /* nav style  */
+    .nav {
+        background-color: aliceblue;
+        display: flex;
+        align-items: center;
+        min-height:7vh;
+        position: relative;
+        width:100vw;
+    }
+
+    .main .nav .left {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        position: relative;
+        width: 20vw;
+        max-height: 7vh;
+    }
+
+    .main .nav .left img {
+        height:7vh;
+        cursor: pointer;
+    }
+
+    .main .nav .center {
+        height: 7vh;
+        width: 60vw;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        cursor:context-menu;
+    }
+
+    .main .nav .center h1 {
+        font-size: 4vh;
+        font-family: 'Vast Shadow', cursive;
+        cursor: pointer;
+        color:rgb(240, 134, 36);
+    }
+
+    .main .nav .right .burger {
+        height: 7vh;
+        width: 20vw;
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        flex-direction:column;
+        justify-content: space-evenly;
+        cursor: pointer;
+    }
+
+    .main .nav .right .burger .line1 {
+        background-color:rgb(236, 146, 43);
+        height: 0.3rem;
+        width: 35px;
+    }
+
+
+    .main .nav .right .burger .line2 {
+        background-color:rgb(236, 146, 43);
+        height: 0.3rem;
+        width: 35px;
+    }
+
+
+    .main .nav .right .burger .line3 {
+        background-color:rgb(236, 146, 43);
+        height: 0.3rem;
+        width: 35px;
+    }
+
+    /* nav style done */
+
+    /* container 1 style */
+    .all-containers .container1 {
+        height: 93vh;
+        background-color:rgba(0, 0, 0, 0.425);
+        display: flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .all-containers .container1 .texts {
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        flex-direction: column;
+        height:10vh;
+    }
+
+    .all-containers .container1 .texts p {
+        font-size:3vh;
+        color:aliceblue;
+        cursor: default;
+
+    }
+
+    .all-containers .container1 .texts p span {
+        color:rgb(224, 135, 33);
+        font-family: 'Vast Shadow', cursive;
+        font-size:4vh;
+        cursor: default;
+    }
+
+    .all-containers .container1 .texts input {
+        background-color:transparent;
+        border:solid 2px;
+        padding: 10px 20px;
+        color: aqua;
+        cursor:pointer;
+        margin-top: 5vh;
+        letter-spacing: 2px;
+        transition: all 0.8s ease
+    }
+
+    .all-containers .container1 .texts input:hover {
+        background-color:aqua;
+        color: rgb(134, 9, 124);
+        letter-spacing: 2px;
+
+    }
