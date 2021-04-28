@@ -1,24 +1,39 @@
     * {
-        padding: 0;
-        margin: 0;
+        padding: 0px;
+        margin: 0px;
         box-sizing: border-box;
     }
 
-    body {
-        background-image: url(./image/pexels-caeli-team-3714960.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        background-size: cover;
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* body {
+        width: 100vw;
+        height: 100vh;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    } */
+    .main {
+        max-width: 100%;
+        overflow-x: hidden;
+        height:160vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main .all-containers {
+        height:153vh;
     }
 
     /* nav style  */
-    .nav {
+    .main .nav {
         background-color: aliceblue;
         display: flex;
         align-items: center;
-        min-height:7vh;
-        position: relative;
+        height:7vh;
         width:100vw;
     }
 
@@ -34,6 +49,7 @@
     .main .nav .left img {
         height:7vh;
         cursor: pointer;
+        width:60px;
     }
 
     .main .nav .center {
@@ -86,12 +102,21 @@
     /* nav style done */
 
     /* container 1 style */
-    .all-containers .container1 {
+    .main .all-containers .container1 {
+        background-image:url(./image/pexels-caeli-team-3714960.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size:cover;
         height: 93vh;
-        background-color:rgba(0, 0, 0, 0.425);
+        width: 100%;
+        background-color:rgba(2, 2, 2, 0.425);
+        position:relative;
         display: flex;
         align-items:center;
         justify-content:center;
+        max-width: 100%;
+        overflow: hidden;
     }
 
     .all-containers .container1 .texts {
@@ -99,11 +124,10 @@
         align-items:center;
         justify-content:center;
         flex-direction: column;
-        height:10vh;
     }
 
     .all-containers .container1 .texts p {
-        font-size:3vh;
+        font-size:20px;
         color:aliceblue;
         cursor: default;
 
@@ -112,7 +136,7 @@
     .all-containers .container1 .texts p span {
         color:rgb(224, 135, 33);
         font-family: 'Vast Shadow', cursive;
-        font-size:4vh;
+        font-size:30px;
         cursor: default;
     }
 
@@ -124,12 +148,65 @@
         cursor:pointer;
         margin-top: 5vh;
         letter-spacing: 2px;
-        transition: all 0.8s ease
+        transition: all 0.8s ease;
+        border-radius: 20px;
     }
 
     .all-containers .container1 .texts input:hover {
         background-color:aqua;
         color: rgb(134, 9, 124);
         letter-spacing: 2px;
+    }
 
+    /* container 1 done */
+
+    /* container 2 style */
+    
+    .main .all-containers .container2 .left-container2 {
+        width:50vw;
+        height:60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main .all-containers .container2 .left-container2 .aboutus {
+        background-color:white;
+        height:35vh;
+        width:35vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        
+    }
+
+    .main .all-containers .container2 .left-container2 .us {
+        font-size: 40px;
+        font-family: 'Fredericka the Great', cursive;
+        color: rgb(231, 158, 47);
+    }
+
+    .main .all-containers .container2 .left-container2 p {
+        font-size:12px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .main .all-containers .container2 .left-container2 input {
+        background-color:transparent;
+        border:solid 2px;
+        padding: 10px 20px;
+        color: rgb(143, 33, 51);
+        cursor:pointer;
+        letter-spacing: 2px;
+        transition: all 0.8s ease;
+        border-radius: 20px;
+
+    }
+
+    .main .all-containers .container2 .left-container2 input:hover {
+        color:rgb(247, 247, 247);
+        background-color: rgb(143, 33, 51);
+        letter-spacing: 2px;
     }
