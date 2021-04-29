@@ -18,7 +18,7 @@
     .main {
         max-width: 100%;
         overflow-x: hidden;
-        height:160vh;
+        height:200vh;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -254,3 +254,81 @@
 
     /* container3 style */
     
+    .main .all-containers .container3 .nav-container3 {
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        background-color:rgb(230, 230, 230);
+        background-color: rgb(199, 199, 199);
+        height: 40vh;
+    } 
+
+    .main .all-containers .container3 h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+
+    .main .all-containers .container3 .store {
+        font-family: 'Fredericka the Great', cursive;
+        color:rgb(238, 132, 56);
+        font-size:40px;
+        letter-spacing: 2px;
+    }
+
+    .main .all-containers .container3 .taps {
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        width:80vh;
+        height:8vmin;
+    }
+
+    .main .all-containers .container3 .taps ul {
+        display: flex;
+        list-style-type: none;
+        justify-content:space-around;
+        align-items:center;
+        width:80vh;
+    }
+
+    .main .all-containers .container3 .taps ul li {
+        border: 1px solid black;
+        letter-spacing:1px;
+        cursor: pointer;
+        padding: 5px 10px;
+        border-radius:50px;
+        transition:all 0.4s linear
+    }
+
+    .main .all-containers .container3 .taps ul li:hover{
+        background-color:black;
+        color:white;
+    }
+
+    .main .all-containers .container3 .sr {
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        height: 40px;
+        margin-top:20px;
+    }
+
+    .main .all-containers .container3 .sr i {
+        background-color:coral;
+        padding:8px;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+
+    .main .all-containers .container3 .sr input{
+        padding: 10px;
+        width: 300px;
+        outline: none;
+        border:none;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        font-family: 'New Rocker', cursive;
+        font-size: 13px;
+    }
